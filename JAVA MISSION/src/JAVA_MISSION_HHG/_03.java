@@ -1,4 +1,4 @@
-package _03;
+package JAVA_MISSION_HHG;
 
 public class _03 {
 	

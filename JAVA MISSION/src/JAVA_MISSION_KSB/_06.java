@@ -1,4 +1,4 @@
-package _06_SB;
+package JAVA_MISSION_KSB;
 
 import java.util.Scanner;
 

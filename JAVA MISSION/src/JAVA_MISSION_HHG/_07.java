@@ -1,4 +1,4 @@
-package _07;
+package JAVA_MISSION_HHG;
 
 import java.util.Iterator;
 import java.util.Scanner;
