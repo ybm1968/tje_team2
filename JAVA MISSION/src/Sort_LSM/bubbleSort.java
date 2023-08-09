@@ -1,35 +1,36 @@
-package Sort;
+package Sort_LSM;
 
 import java.util.Scanner;
 
-public class SelectSort {
-	
+public class bubbleSort {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("배열의 크기를 입력하시오 : ");
 		int n = sc.nextInt();
-		int MIN;
-		int[] arry = new int[n];
+		int[] ary = new int[n];
 		
 		System.out.println("배열에 들어갈 수를 입력하시오 : ");
-		for (int i = 0; i < arry.length; i++) {
-			arry[i] = sc.nextInt();
+		for (int i = 0; i < ary.length; i++) {
+			ary[i] = sc.nextInt();
 		}
 		
-		for (int i = 0; i < arry.length-1; i++) {
-			for (int j = i+1; j < arry.length; j++) {
-				if (arry[i] > arry[j]) {
-					MIN = arry[j];
-					arry[j] = arry[i];
-					arry[i] = MIN;
-				} 
+		for (int i = 1; i < ary.length; i++) {
+			for (int j = 0; j < ary.length-i; j++) {
+				if(ary[j] > ary[j+1]) {
+					int tmp = ary[j+1];
+					ary[j+1] = ary[j];
+					ary[j] = tmp;
+				}
 			}
 			System.out.print(i + "회차 : ");
-			for (int k : arry) {
+			for (int k : ary) {
 				System.out.print(k + " ");
 			}
 			System.out.println();
 		}
+		
 		sc.close();
+	
 	}
 }
