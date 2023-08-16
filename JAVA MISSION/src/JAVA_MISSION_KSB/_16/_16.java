@@ -43,7 +43,7 @@ public class _16 {
 			Student std;
 			while (sc.hasNextLine()) {
 				String stn = sc.nextLine();
-				String[] data = stn.replace("[","").replace(",", "").split("/");
+				String[] data = stn.split("/");
 				
 				int no = Integer.parseInt( data[0] );
 				String name = data[1];
